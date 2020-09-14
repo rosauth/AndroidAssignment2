@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1"
+    tools:context=".LinearLayoutActivity">
+
+    <Button
+        android:id="@+id/btn_showToast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:backgroundTint="#326273"
+        android:onClick="showToast"
+        android:text="Hint"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_countUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:backgroundTint="#326273"
+        android:onClick="count"
+        android:text="Count"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txt_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="150sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lyt_expectedVal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_expectedVal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Expected Value"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

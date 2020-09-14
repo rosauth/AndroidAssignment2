@@ -1,15 +1,15 @@
 package com.rosa.androidassignment2;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nextPage(View view) {
-        Intent nextPage = new Intent(getApplicationContext(), IntentActivity.class);
+        Intent nextPage = new Intent(getApplicationContext(), LinearLayoutActivity.class);
         nextPage.putExtra("count", Integer.parseInt(txt_num.getText().toString()));
         startActivity(nextPage);
     }
