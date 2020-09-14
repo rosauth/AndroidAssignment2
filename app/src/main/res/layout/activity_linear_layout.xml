@@ -15,17 +15,7 @@
         android:layout_weight="0.1"
         android:backgroundTint="#326273"
         android:onClick="showToast"
-        android:text="Hint"
-        android:textColor="@android:color/white" />
-
-    <Button
-        android:id="@+id/btn_countUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1"
-        android:backgroundTint="#326273"
-        android:onClick="count"
-        android:text="Count"
+        android:text="Another Counter"
         android:textColor="@android:color/white" />
 
     <TextView
@@ -40,6 +30,17 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="150sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_countUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:backgroundTint="#326273"
+        android:onClick="count"
+        android:text="Count"
+        android:textColor="@android:color/white" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/lyt_expectedVal"

@@ -1,5 +1,6 @@
 package com.rosa.androidassignment2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -61,7 +62,8 @@ public class LinearLayoutActivity extends AppCompatActivity {
     }
 
     public void showToast(View view) {
-        Toast.makeText(getApplicationContext(), "Input your expected value on EditText below", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Navigate to first Counter - Assignment", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 
     public void count(View view) {

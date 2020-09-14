@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nextPage(View view) {
-        Intent nextPage = new Intent(getApplicationContext(), LinearLayoutActivity.class);
+        Intent nextPage = new Intent(getApplicationContext(), IntentActivity.class);
         nextPage.putExtra("count", Integer.parseInt(txt_num.getText().toString()));
         startActivity(nextPage);
     }
